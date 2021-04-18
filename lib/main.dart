@@ -33,13 +33,15 @@ class PantallaPrincipal extends StatelessWidget {
                 : Center(
                     child: CircularProgressIndicator(),
                   )
-            : Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: ChisteWidget(
-                  texto1: estado.data.chiste,
-                  texto2: estado.data.remate,
+            : Center(
+              child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ChisteWidget(
+                    texto1: estado.data.chiste,
+                    texto2: estado.data.remate,
+                  ),
                 ),
-              ),
+            ),
       ),
     );
   }
